@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/logoaplikasi"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:srcCompat="@drawable/LOGO" />
+
+        <ImageView
+            android:id="@+id/sidebar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="-60dp"
+            app:layout_anchor="@+id/sidebar"
+            app:layout_anchorGravity="bottom|center"
+            tools:srcCompat="@drawable/ic_sidebar"
+            android:contentDescription="@string/sidebar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tambahentry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_addentry_foreground"
+        app:backgroundTint="#85C6DA"
+        android:contentDescription="@string/tambah_entry" />
+
+    <TextView
+        android:id="@+id/TanggalHariIni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="170dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <FrameLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/dashboard_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="130dp"
+            android:text="@string/today_s_expend"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/income"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DailyIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="40dp"
+            android:text="Rp. xxx.xxx"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/Expend"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DailyExpend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="40dp"
+            android:text="Rp. xxx.xxx"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/budget"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DailyBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="40dp"
+            android:text="Rp. xxx.xxx"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:ignore="InvalidId" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/dashboard_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="130dp"
+            android:text="@string/today_s_expend"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/income"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/MonthlyIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="40dp"
+            android:text="Rp. xxx.xxx"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/Expend"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/MonthlyExpend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="40dp"
+            android:text="Rp. xxx.xxx"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/budget"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/MonthlyBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="40dp"
+            android:text="Rp. xxx.xxx"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:ignore="InvalidId" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="580dp"
+        android:background="@drawable/dashboard_bg"
+        android:orientation="vertical" >
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:layout_anchor="@+id/linearLayout"
+            app:layout_anchorGravity="center" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "106421072050",
+    "project_id": "moneyexpense-f295a",
+    "storage_bucket": "moneyexpense-f295a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106421072050:android:8e6bed26c75ab6e00219ab",
+        "android_client_info": {
+          "package_name": "com.ulfah.moneyexpend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106421072050-2pirdbqvv0ord53q4sga9g27grl7s0r8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ulfah.moneyexpend",
+            "certificate_hash": "b1e15f2e1d53ba2df097c68cbf45b857ac5d63d5"
+          }
+        },
+        {
+          "client_id": "106421072050-57en18t7uikvers4amghndglbut9aqfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHidKUjZlhs3pVOuieuL9Sd0T34ms383s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106421072050-57en18t7uikvers4amghndglbut9aqfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
